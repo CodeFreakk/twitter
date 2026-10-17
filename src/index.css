@@ -1,0 +1,64 @@
+:root {
+  --scroll-offset: 80px;
+  --color-background-primary: #15202b;
+  --color-background-secondary: #1e2732;
+  --color-text-primary: #f7f9f9;
+  --color-text-secondary: #8b98a5;
+  --color-border: #39444d;
+  --color-brand: #1d9bf0;
+  --color-retweet: #00ba7c;
+  --color-action-muted: #71767b;
+  --corner-radius-360: 360px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-offset, 80px);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+[id] {
+  scroll-margin-top: var(--scroll-offset, 80px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  min-height: 100svh;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
